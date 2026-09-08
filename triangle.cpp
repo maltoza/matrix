@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#define MAX_LEN 1000
+#define MAX_LEN 2035
 
 int make_table(int* const table, const int n);
 int output_table(const int* table, const int num_com);
