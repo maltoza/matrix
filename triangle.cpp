@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <assert.h>
 
 #define MAX_LEN 2035
 
@@ -22,6 +23,8 @@ int main()
 
 int make_table(int* const table, const int n)
 {
+    assert(table != NULL);
+
     for (int lev = 1; lev <= n; ++lev)
     {
         for (int i = 1; i <= lev; ++i)
@@ -35,8 +38,10 @@ int make_table(int* const table, const int n)
 
 
 
-int output_table(const int* table, const int num_com)
+int output_table(const int* const table, const int num_com)
 {
+    assert(table != NULL);
+
     for (int lev = 1; lev <= num_com; ++lev)
     {
         for (int i = 1; i <= lev; ++i)
